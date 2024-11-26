@@ -15,25 +15,24 @@ A nova arquitetura está representada no diagrama abaixo:
 
   <p>O fluxo de processamento detalhado é descrito abaixo:
 
-<b>Etapa 1:</b> Captura de Vídeo pela Câmera
-
-
-Evento: A câmera inicia a captura de vídeo.
-
-
-Ação: Os frames capturados são enviados ao servidor utilizando o protocolo RTSP.
+<b>Etapa 1:</b> A câmera inicia a captura do vídeo e transmite os frames para o servidor por meio do protocolo RTSP.
 
 
 <b>Etapa 2:</b> Processamento no Servidor
-Recepção dos Dados:
 
-O servidor recebe os frames transmitidos pela câmera via RTSP.
-Este processo inicia no momento em que o frame é transmitido.
+Recepção dos Dados: O servidor, implementado em C++, recebe os frames enviados pela câmera.
 
-Processamento dos Frames: 
-O servidor, utilizando a biblioteca OpenCV, processa o vídeo para:
-Identificar objetos relevantes no frame.
-Calcular a distância dos objetos identificados.
+
+Análise e Cálculo: Usando a biblioteca OpenCV, o servidor realiza as seguintes operações:
+<ul>
+<li>Identificação de objetos relevantes nos frames.</li>
+<li>Cálculo da distância entre a câmera e os objetos detectados.</li>
+</ul>
+
+
+
+
+
 
 <b>Etapa 3:</b> Envio do Parâmetro ao ESP32: 
 
