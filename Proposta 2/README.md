@@ -1,3 +1,10 @@
+<h0> Definição de Ambiente e Objetos <h0>
+
+<li>Definição de Ambiente.
+  - Para a definição de ambiente decidimos optar por um ambiente de fundo simples e cor mais clara ( azul,branco) para que quando forem feitas as capturas de imagens através da cãmera ICSee seja mais fácil para visualizar o objeto, assim facilitando a detecção de objetos utilizando o OPENCV</li>
+<li>Definição de Objetos
+  - Os objetos foram definidos com o objetivo de serem simples de reconhecer e de fácil captura de imagem, seriam eles Latas( Coca-Cola, Pepsi,etc) e Copos Plásticos.</li>
+
 
   <h1> Mudança de escopo </h1>
   <p>Após os testes iniciais, foi identificado que a câmera OV2640 apresentou problemas estruturais que comprometem sua durabilidade e confiabilidade. Assim, optou-se por alterar a arquitetura do projeto, adotando a câmera Speed Dome iCSee, que possui certificações IP67 (resistência à água e poeira) e IK10 (resistência a impactos). Essa câmera foi escolhida por sua robustez e por simplificar a integração com o servidor utilizando o protocolo RTSP.</p>
